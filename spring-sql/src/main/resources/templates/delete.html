@@ -1,0 +1,17 @@
+<!-- src/main/resources/templates/delete.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Employee</title>
+</head>
+<body>
+    <h2>Delete Employee</h2>
+    <form action="/delete" method="post">
+        <input type="hidden" id="id" name="id" th:value="${employee.id}">
+        
+        <button type="submit">Delete Employee</button>
+    </form>
+</body>
+</html>
